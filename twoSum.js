@@ -1,3 +1,4 @@
+// FIRST SOLVE
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -14,5 +15,26 @@ var twoSum = function(nums, target) {
                 return [i, x];
             }
         }
+    }
+};
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function (nums, target) {
+    // Create a hash map to store numbers we've seen and their indices
+    let prevChecks = {};
+    // Loop through the array
+    for (let i = 0; i < nums.length; i++) {
+        // Calculate the number needed to reach the target
+        let complement = target - nums[i];
+        // If we've already seen that number, return the pair of indices
+        if (complement in prevChecks) {
+            return [prevChecks[complement], i];
+        }
+        // Otherwise, store the current number with its index
+        prevChecks[nums[i]] = i;
     }
 };

@@ -18,6 +18,8 @@ var twoSum = function(nums, target) {
     }
 };
 
+// SECOND ATTEMPT 
+// Time Complexity: O(n), Space Complexity: O(n)
 /**
  * @param {number[]} nums
  * @param {number} target

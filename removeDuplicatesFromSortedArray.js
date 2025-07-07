@@ -1,4 +1,9 @@
 // FIRST SOLVE
+// Time Complexity: O(n), Space Complexity: O(1)
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 var removeDuplicates = function (nums) {
     // pointer
     let i = 0;
